@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Form</title>
+  <link rel="stylesheet" href="survey.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <form action="survey.html" method="GET">
+
+          <div>
+            <h1>Sign Up</h1>
+          </div>
+
+          <div>
+            <!-- <fieldset> tag is used to group related elements in a form. -->
+            <fieldset>
+              <!-- The <legend> tag is used to define a caption for the <fieldset> element. -->
+              <legend class="yourBasicInfo">Your Basic Info</legend>
+
+              <label for="name">Name:</label><br>
+              <input class="input" type="text" name="name" id="name">
+              <label for="email">Email:</label><br>
+              <input class="input" type="email" name="email" id="email">
+              <label for="password">Password:</label><br>
+              <input class="input" type="password" name="password" id="password">
+
+              <label for="age">Age:</label><br>
+              <input type="radio" name="age" id="under-13">
+              <label for="under-13">Under 13</label><br>
+              <input type="radio" name="age" id="over-13">
+              <label for="over-13">Over 13</label>
+
+            </fieldset>
+          </div>
+
+          <div>
+            <fieldset>
+              <legend class="yourProfile">Your Profile</legend>
+              <label for="bio">Bio:</label><br>
+              <textarea class="input" name="bio" id="bio" cols="40" rows="3"></textarea>
+
+              <div>Job Role:</div>
+              <select name="jobRole" id="jobRole" class="input" >
+                <optgroup label="Web">
+                  <option value="frontend" selected>Front-End Developer</option>
+                  <option value="jsdeveloper">JS Developer</option>
+                  <option value="python">Python Developer</option>
+                  <option value="django">Django Developer</option>
+                  <option value="webdeveloper">WEB Developer</option>
+                  <option value="wordpress">Wordpress Developer</option>
+                </optgroup>
+
+                <optgroup label="Mobile">
+                  <option value="android">Android Developer</option>
+                  <option value="ios">IOS Developer</option>
+                  <option value="mobile">Mobile Designer</option>
+                </optgroup>
+
+                <optgroup label="Business">
+                  <option value="business">Business Owner</option>
+                  <option value="freelancer">Freelancer</option>
+                </optgroup>
+              </select>
+
+              <br><br>
+              <div>
+                <label>Interests:</label><br>
+                <input type="checkbox" name="interests" id="development">
+                <label for="interests">Development</label><br>
+                <input type="checkbox" name="interests" id="design">
+                <label for="interests">Design</label><br>
+                <input type="checkbox" name="interests" id="business">
+                <label for="interests">Business</label><br>
+              </div>
+
+            </fieldset>
+          </div>
+          <input type="submit" value="Sign Up" id="submit">
+
+        </form>
+
+</body>
+</html>
