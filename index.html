@@ -1,15 +1,21 @@
 <html lang="en">
 <head>
+  <!-- Character set -->
   <meta charset="UTF-8">
+  <!-- edge Microsoft icin lazim -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- viewport olmaz ise mobile gorunum olusmuyor -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sign Up Form</title>
+  <!-- Link disaridan import etmemizi sagliyor -->
   <link rel="stylesheet" href="survey.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
 </head>
 <body>
-
+<!-- Form dokumani ile veri aliyoruz -->
+<!-- information private oldugunda post private olmadiginda get kullaniyoruz -->
+<!-- action olarak nereye gidecekse onu seciyoruz -->
         <form action="survey.html" method="GET">
 
           <div>
@@ -71,11 +77,11 @@
               <div>
                 <label>Interests:</label><br>
                 <input type="checkbox" name="interests" id="development">
-                <label for="interests">Development</label><br>
+                <label for="development">Development</label><br>
                 <input type="checkbox" name="interests" id="design">
-                <label for="interests">Design</label><br>
+                <label for="design">Design</label><br>
                 <input type="checkbox" name="interests" id="business">
-                <label for="interests">Business</label><br>
+                <label for="business">Business</label><br>
               </div>
 
             </fieldset>
